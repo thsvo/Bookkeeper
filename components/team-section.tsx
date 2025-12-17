@@ -33,9 +33,9 @@ export function TeamSection() {
 
   const bookkeepingExperts = [
     {
-      name: "Rebaka Sharmin",
+      name: "Rebaka",
       role: "Junior Bookkeeping Specialist",
-      image: "/RebakaSharmin.jpg",
+      image: "/Rebaka.jpg",
       experience: "7+ years in bookkeeping and account management",
       description: "Rebaka is dedicated to maintaining accurate records and supporting clients with day-to-day financial tasks. From financial recording to account reconciliation, she ensures businesses always have a clear financial picture.",
       specialties: ["Financial recording", "Reconciliations", "Expense management", "Full Range Of Bookkeeping", "QuickBooks", "Xero", "Wave Software"]
