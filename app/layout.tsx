@@ -5,8 +5,8 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Bookkeeper&apos;s Touch - Your Trusted Partner in Financial Clarity",
-  description: 'We help small businesses stay on top of their finances with accurate bookkeeping, clear reporting, and reliable support. Focus on growing your business while we handle the numbers.',
+  title: "Reliable QuickBooks Bookkeeping & Cleanup Support | Bookkeepers Touch",
+  description: "Stop drowning in messy books and backlogs. Bookkeepers Touch provides crystal-clear, tax-ready financial statements and white-label back-office support for US CPA Firms, Tax Firms, Fractional CFOs, and Small Businesses.",
   generator: 'Next.js',
 }
 

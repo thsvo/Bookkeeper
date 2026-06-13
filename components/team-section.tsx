@@ -8,45 +8,45 @@ export function TeamSection() {
   const leadership = [
     {
       name: "Rakib Uddin",
-      role: "Founder & Director of Client Strategy",
+      role: "Founder & NDIS Strategy Director",
       image: "/rakib.jpg",
-      description: "Rakib is the founder of Bookkeeper&apos;s Touch and the first point of contact for new clients. With extensive experience in client acquisition and business development, he has helped numerous small and medium-sized businesses find clarity in their finances.",
-      specialties: ["Client relations", "Bookkeeping strategy", "Financial clarity solutions", "Full Range Of Bookkeeping", "QuickBooks", "Xero", "Wave Software"]
+      description: "Rakib is the founder of NDIS Bookkeeping Australia. With a deep commitment to the disability sector, he specializes in helping participants and providers navigate the financial complexities of the NDIS with ease and confidence.",
+      specialties: ["NDIS Plan Strategy", "Budget Optimization", "Compliance Oversight", "Xero & QuickBooks for NDIS", "Financial Wellness"]
     },
     {
       name: "Mujahid Hasan",
-      role: "Head of Client Relations & Operations",
+      role: "Head of NDIS Participant Relations",
       image: "/mujhaid.jpg",
-      experience: "8+ years in client operations and relationship management",
-      description: "Mujahid plays a central role in handling client meetings and ensuring all client needs are met with precision. With a background in operations and strong communication skills, he ensures smooth coordination between clients and our bookkeeping team.",
-      specialties: ["Client communications", "Operations management", "Workflow efficiency", "Full Range Of Bookkeeping", "QuickBooks", "Xero", "Wave Software"]
+      experience: "8+ years in client operations and NDIS relationship management",
+      description: "Mujahid ensures every participant and provider receives personalized attention. He excels at translating complex NDIS rules into simple, actionable steps, ensuring smooth financial operations for all our clients.",
+      specialties: ["Participant Advocacy", "Service Agreement Management", "PRODA Troubleshooting", "Plan Management Support"]
     },
     {
       name: "Abid Hasan",
-      role: "Chartered Accountant & Bookkeeper",
+      role: "Senior NDIS Compliance Accountant",
       image: "/abid.jpg",
-      experience: "6+ years in large scale local and MNCs Audit, Management Audit, due diligence",
-      description: "Mr. Abid Hasan is a part qualified Chartered Accountant with more than 6 years of experience in large scale local and MNCs Audit, Management Audit, due diligence, Business and Asset Valuation, Accounting Service, Financial statement Preparation, and Internal audit. He has worked with prominent clients including Banglalink, Marico Bangladesh Limited, and TVS Auto Bangladesh Limited.",
-      specialties: ["Accounts Payable & Receivable Specialist", "Payroll", "Bank Reconciliation Expert", "QuickBooks", "Xero Bookkeeping", "Financial Reporting Expert", "Tax-Ready Bookkeeping", "Cash Flow Management"]
+      experience: "6+ years in Audit, NDIS Compliance & Financial Reporting",
+      description: "Abid is a part-qualified Chartered Accountant specializing in NDIS audit readiness and provider compliance. He ensures that every claim and financial record meets the strict standards of the NDIS Commission, protecting our clients from risk.",
+      specialties: ["NDIS Audit Readiness", "Provider Tax Compliance", "Complex Reconciliations", "NDIS Reporting Standards"]
     }
   ]
 
   const bookkeepingExperts = [
     {
-      name: "Rebaka",
-      role: "Junior Bookkeeping Specialist",
-      image: "/Rebaka.jpg",
-      experience: "7+ years in bookkeeping and account management",
-      description: "Rebaka is dedicated to maintaining accurate records and supporting clients with day-to-day financial tasks. From financial recording to account reconciliation, she ensures businesses always have a clear financial picture.",
-      specialties: ["Financial recording", "Reconciliations", "Expense management", "Full Range Of Bookkeeping", "QuickBooks", "Xero", "Wave Software"]
+      name: "Asif",
+      role: "NDIS Bookkeeping Specialist",
+      image: "/d256473aa68d8976500eadd1d2e87f0f.jpg",
+      experience: "7+ years in specialized NDIS bookkeeping",
+      description: "Asif focuses on the daily financial needs of NDIS participants and providers. From processing invoices to tracking budget utilization, he ensures every dollar is accounted for accurately.",
+      specialties: ["Invoice Processing", "Budget Tracking", "Expense Categorization", "Xero for NDIS"]
     },
     {
       name: "Tanvir Ahmed",
-      role: "Bookkeeping & Compliance Specialist",
+      role: "NDIS Reporting & Support Specialist",
       image: "/TanvirAhmed.jpg",
-      experience: "6+ years in bookkeeping and financial reporting",
-      description: "Tanvir supports our clients with reliable and consistent bookkeeping services. He has a strong background in managing financial data and ensuring accuracy in every report.",
-      specialties: ["General bookkeeping", "Financial reporting", "Compliance support", "Full Range Of Bookkeeping", "QuickBooks", "Xero", "Wave Software"]
+      experience: "6+ years in NDIS financial support",
+      description: "Tanvir prepares detailed monthly reports that simplify the NDIS journey for our clients. His attention to detail ensures that plan reviews are stress-free and data-driven.",
+      specialties: ["NDIS Monthly Reporting", "Portal Support", "Data Accuracy", "Budget Monitoring"]
     },
       {
         name: "Jahin Sultana",
@@ -95,10 +95,10 @@ export function TeamSection() {
             Meet Our Team
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            At Bookkeeper&apos;s Touch, we believe in building strong client relationships and delivering accurate, reliable financial services. Our dedicated team combines years of experience in bookkeeping, client relations, and financial management to ensure every client receives personalized support and clarity in their finances.
+            At NDIS Bookkeeping Australia, we combine financial expertise with a deep understanding of the disability sector. Our team is dedicated to providing participants and providers with the clarity and support they need to navigate the NDIS with confidence.
           </p>
           <p className="text-base text-muted-foreground max-w-2xl mx-auto">
-            We are more than bookkeepers — we are trusted partners who value accuracy, transparency, and long-term success for your business.
+            We are more than just bookkeepers — we are your partners in NDIS financial success, valuing accuracy, transparency, and personal connection.
           </p>
         </div>
 
@@ -199,7 +199,7 @@ export function TeamSection() {
               Why Clients Trust Us
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              At Bookkeeper&apos;s Touch, we understand that bookkeeping is more than numbers — it&apos;s about trust. Our clients rely on us because:
+              At NDIS Bookkeeping Australia, we understand that NDIS bookkeeping is about more than numbers — it&apos;s about ensuring you have the support you need. Our clients choose us because:
             </p>
           </div>
           

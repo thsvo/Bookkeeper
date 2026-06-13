@@ -7,48 +7,48 @@ import { Check } from "lucide-react"
 export function PricingSection() {
   const plans = [
     {
-      name: "Basic Plan",
+      name: "NDIS Participant Plan",
       price: "$99",
       period: "/month",
-      description: "Best for: Small businesses just starting with bookkeeping or looking for minimal monthly support.",
+      description: "Best for: Self-managed or plan-managed participants needing budget tracking and invoice processing.",
       features: [
-        "Monthly bookkeeping & transaction recording up to 120",
-        "Bank reconciliation",
-        "Basic financial reports",
-        "QuickBooks/Xero/Wave setup if needed"
+        "Monthly budget tracking & alerts",
+        "Invoice processing & recording (up to 100)",
+        "Service agreement management",
+        "Monthly spending vs budget report",
+        "Email & chat support"
       ],
-      note: "This plan is perfect if you just need someone to keep your books organized and up-to-date without spending too much time on bookkeeping.",
+      note: "Stay on top of your NDIS funding with zero stress. We ensure your invoices are paid and your budget is healthy.",
       popular: false
     },
     {
-      name: "Standard Plan",
+      name: "NDIS Provider Plan",
       price: "$199",
       period: "/month",
-      description: "Best for: Growing businesses that need more detailed reporting and support.",
+      description: "Best for: NDIS service providers needing audit-ready books and PRODA assistance.",
       features: [
-        "Everything in the Basic Plan",
-        "Transaction recording up to 250",
-        "Monthly P&L, Balance Sheet & Cash Flow statements",
-        "Accounts payable/receivable tracking",
-        "Unlimited bookkeeping support via email/chat"
+        "Full NDIS-compliant bookkeeping",
+        "PRODA/Portal upload assistance",
+        "Profit & Loss, Balance Sheet reporting",
+        "Audit-ready documentation prep",
+        "Support worker payroll tracking"
       ],
-      note: "This plan helps business owners see a clear picture of their finances every month so they can make informed decisions and focus on growth.",
+      note: "Perfect for growing providers who want to focus on care while we handle the NDIS compliance and bookkeeping.",
       popular: true
     },
     {
-      name: "Premium Plan",
-      price: "$299",
-      period: "/month",
-      description: "Best for: Businesses with complex finances or multiple accounts.",
+      name: "Complex NDIS Enterprise",
+      price: "Custom",
+      period: "",
+      description: "Best for: Large providers with multiple locations or complex staffing needs.",
       features: [
-        "Everything in the Standard Plan",
-        "Transaction recording up to 350",
-        "Catch-up bookkeeping (if books are behind)",
-        "Payroll setup & management (optional add-on)",
-        "Inventory and sales tracking support",
-        "Monthly consultation call with Support Team"
+        "Advanced NDIS financial management",
+        "Customized reporting dashboards",
+        "Full payroll & superannuation",
+        "Monthly strategy consultation",
+        "Unlimited portal troubleshooting"
       ],
-      note: "Or offer custom quote (Contact for tailored pricing).",
+      note: "Contact us for a tailored quote based on your specific organizational size and needs.",
       popular: false
     }
   ]
@@ -90,7 +90,7 @@ export function PricingSection() {
                 <div className="space-y-2">
                   <div className="flex items-baseline justify-center">
                     <span className="text-5xl font-bold text-foreground">{plan.price}</span>
-                    <span className="text-muted-foreground ml-1">{plan.period}</span>
+                    {plan.period && <span className="text-muted-foreground ml-1">{plan.period}</span>}
                   </div>
                   <p className="text-sm text-muted-foreground max-w-xs mx-auto">
                     {plan.description}
@@ -119,9 +119,9 @@ export function PricingSection() {
                         ? 'bg-primary text-primary-foreground hover:bg-primary/90' 
                         : 'bg-secondary text-secondary-foreground hover:bg-secondary/90'
                     }`}
-                    onClick={() => window.open('https://calendly.com/bookkeeperstouch/bookkeeping-consultation', '_blank')}
+                    onClick={() => window.open('https://calendly.com/ndisbookkeeping/consultation', '_blank')}
                   >
-                    {plan.name === 'Premium Plan' ? 'Contact for Custom Quote' : 'Get Started'}
+                    {plan.name === 'Complex NDIS Enterprise' ? 'Contact for Custom Quote' : 'Get Started'}
                   </Button>
                 </div>
               </CardContent>

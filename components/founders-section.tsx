@@ -7,7 +7,7 @@ export function AboutSection() {
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center space-y-4 lg:space-y-6 mb-16 lg:mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground text-balance max-w-5xl mx-auto">
-            Who I Am & Why I Started Bookkeeping
+            Our Commitment to the NDIS Community
           </h2>
         </div>
 
@@ -17,14 +17,14 @@ export function AboutSection() {
             <div className="space-y-6 lg:space-y-8">
               <div className="space-y-4 lg:space-y-6">
                 <h3 className="text-2xl lg:text-3xl xl:text-4xl font-semibold text-foreground text-balance">
-                  My name is Rakib Uddin, and I'm the founder of Bookkeeper&apos;s Touch.
+                  My name is Rakib Uddin, founder of NDIS Bookkeeping Australia.
                 </h3>
                 <div className="space-y-4 text-base lg:text-lg xl:text-xl text-muted-foreground text-pretty leading-relaxed">
                   <p>
-                    Numbers have always made sense to me—where others see stress and confusion, I see clarity and order. Over the years, I noticed that many small business owners were passionate about their work but struggled to stay on top of their finances.
+                    I founded this company with a clear vision: to bridge the gap between complex NDIS financial requirements and the people who need clarity most. Having seen the challenges participants and providers face with plan management and compliance, I knew there was a better way.
                   </p>
                   <p>
-                    Bookkeeping often felt overwhelming, distracting them from the very thing they loved most—running and growing their business.
+                    Our approach is built on empathy and precision. We don&apos;t just manage numbers; we support lives by ensuring that funding is used effectively and transparently.
                   </p>
                 </div>
               </div>
@@ -32,7 +32,7 @@ export function AboutSection() {
             <div className="relative">
               <img
                 src="/professional-man-in-casual-clothing-working-at-des.jpg"
-                alt="Rakib Uddin - Founder of Bookkeeper&apos;s Touch"
+                alt="Rakib Uddin - Founder of NDIS Bookkeeping Australia"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
               <Card className="absolute top-4 right-4 lg:top-6 lg:right-6 p-3 lg:p-4 bg-white/90 backdrop-blur-sm shadow-lg">
@@ -49,14 +49,14 @@ export function AboutSection() {
             <div className="lg:order-1 space-y-6 lg:space-y-8">
               <div className="space-y-4 lg:space-y-6">
                 <h3 className="text-2xl lg:text-3xl xl:text-4xl font-semibold text-foreground text-balance">
-                  That's why I started Bookkeeper&apos;s Touch.
+                  Specialized Support for NDIS Participants.
                 </h3>
                 <div className="space-y-4 text-base lg:text-lg xl:text-xl text-muted-foreground text-pretty leading-relaxed">
                   <p>
-                    My mission is simple: to take the weight of bookkeeping off your shoulders, so you can focus on what you do best. I believe every business, no matter its size, deserves accurate financial records, clear reporting, and someone they can trust with their numbers.
+                    Our mission is to take the stress out of NDIS financial management. Whether you are a self-managed participant, a plan-managed individual, or an NDIS provider, we provide the expert bookkeeping and budget tracking you need to succeed.
                   </p>
                   <p>
-                    With a personal, detail-oriented approach, I work alongside small business owners as a partner—not just a bookkeeper. At Bookkeeper&apos;s Touch, you don't just get financial clarity—you get peace of mind.
+                    We believe in the power of the NDIS to transform lives, and we are here to ensure that the financial side of that journey is smooth, compliant, and easy to understand. With NDIS Bookkeeping Australia, you gain a partner dedicated to your financial wellness.
                   </p>
                 </div>
               </div>
@@ -81,14 +81,14 @@ export function AboutSection() {
             <div className="space-y-6 lg:space-y-8">
               <div className="space-y-4 lg:space-y-6">
                 <h3 className="text-2xl lg:text-3xl xl:text-4xl font-semibold text-foreground text-balance">
-                  Personal, detail-oriented approach
+                  Audit-Ready Compliance
                 </h3>
                 <div className="space-y-4 text-base lg:text-lg xl:text-xl text-muted-foreground text-pretty leading-relaxed">
                   <p>
-                    I understand that every business is unique. That's why I take the time to understand your specific needs and challenges, providing personalized bookkeeping solutions that grow with your business.
+                    We understand the rigorous standards of the NDIS Quality and Safeguards Commission. That&apos;s why our processes are designed to be audit-ready from day one, providing you with the security and confidence you deserve.
                   </p>
                   <p>
-                    When you work with Bookkeeper&apos;s Touch, you're not just getting a service—you're gaining a partner who's invested in your success.
+                    When you work with NDIS Bookkeeping Australia, you&apos;re getting more than just a bookkeeping service—you&apos;re gaining a team of experts invested in your long-term stability and success in the NDIS ecosystem.
                   </p>
                 </div>
               </div>

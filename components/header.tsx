@@ -1,58 +1,76 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import Image from "next/image"
-import { Menu, X } from "lucide-react"
+import { Menu, X, Calculator } from "lucide-react"
 import { useState } from "react"
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
+  const scrollToSection = (id: string) => {
+    setIsMobileMenuOpen(false)
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
-    <header className="w-full border-b border-border bg-background">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur-md">
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between max-w-7xl">
         <div className="flex items-center space-x-8">
-          <div className="flex items-center space-x-2">
-            <Image src="/logo.png" alt="Logo" width={64} height={64} className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
-            {/* <span className="font-bold text-xl text-foreground">Bookkeeper&apos;s Touch</span> */}
-          </div>
+          <button onClick={() => scrollToSection("hero")} className="flex items-center space-x-2 text-left hover:opacity-90">
+            <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+              <Calculator className="w-6 h-6 text-accent" />
+            </div>
+            <span className="font-bold text-xl text-primary tracking-tight">Bookkeepers Touch</span>
+          </button>
 
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">
+            <button 
+              onClick={() => scrollToSection("pain-points")} 
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+            >
+              Why Us
+            </button>
+            <button 
+              onClick={() => scrollToSection("services")} 
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+            >
               Services
-            </a>
-            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-              About
-            </a>
-            <a href="#team" className="text-muted-foreground hover:text-foreground transition-colors">
-              Team
-            </a>
-            <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
-              Pricing
-            </a>
-            <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
-              Contact
-            </a>
+            </button>
+            <button 
+              onClick={() => scrollToSection("partnership")} 
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+            >
+              B2B Partner Support
+            </button>
+            <button 
+              onClick={() => scrollToSection("testimonials")} 
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+            >
+              Reviews & Credentials
+            </button>
           </nav>
         </div>
 
         <div className="hidden md:flex items-center space-x-4">
           <Button 
-            className="bg-primary text-primary-foreground hover:bg-primary/90"
-            onClick={() => window.open('https://calendly.com/bookkeeperstouch/bookkeeping-consultation', '_blank')}
+            className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-sm"
+            onClick={() => scrollToSection("contact")}
           >
-            Book a Free Consultation
+            Get a Free Cleanup Quote
           </Button>
         </div>
 
         <div className="md:hidden flex items-center space-x-2">
           <Button 
-            variant="ghost" 
+            variant="outline" 
             size="sm" 
-            onClick={() => window.open('https://calendly.com/bookkeeperstouch/bookkeeping-consultation', '_blank')}
-            className="px-2"
+            onClick={() => scrollToSection("contact")}
+            className="border-accent text-accent hover:bg-accent/10"
           >
-            Book Now
+            Get Quote
           </Button>
           <Button variant="ghost" size="sm" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="p-2">
             {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -63,27 +81,36 @@ export function Header() {
       {isMobileMenuOpen && (
         <div className="md:hidden border-t border-border bg-background">
           <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors py-2">
+            <button 
+              onClick={() => scrollToSection("pain-points")} 
+              className="text-left text-muted-foreground hover:text-primary transition-colors py-2 cursor-pointer font-medium"
+            >
+              Why Us
+            </button>
+            <button 
+              onClick={() => scrollToSection("services")} 
+              className="text-left text-muted-foreground hover:text-primary transition-colors py-2 cursor-pointer font-medium"
+            >
               Services
-            </a>
-            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors py-2">
-              About
-            </a>
-            <a href="#team" className="text-muted-foreground hover:text-foreground transition-colors py-2">
-              Team
-            </a>
-            <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors py-2">
-              Pricing
-            </a>
-            <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors py-2">
-              Contact
-            </a>
+            </button>
+            <button 
+              onClick={() => scrollToSection("partnership")} 
+              className="text-left text-muted-foreground hover:text-primary transition-colors py-2 cursor-pointer font-medium"
+            >
+              B2B Partner Support
+            </button>
+            <button 
+              onClick={() => scrollToSection("testimonials")} 
+              className="text-left text-muted-foreground hover:text-primary transition-colors py-2 cursor-pointer font-medium"
+            >
+              Reviews & Credentials
+            </button>
             <div className="pt-4 border-t border-border">
               <Button 
-                className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
-                onClick={() => window.open('https://calendly.com/bookkeeperstouch/bookkeeping-consultation', '_blank')}
+                className="w-full bg-accent text-accent-foreground hover:bg-accent/90"
+                onClick={() => scrollToSection("contact")}
               >
-                Book a Free Consultation
+                Get a Free Cleanup Quote
               </Button>
             </div>
           </nav>

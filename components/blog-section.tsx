@@ -8,32 +8,32 @@ export function BlogSection() {
   const blogPosts = [
     {
       icon: BookOpen,
-      title: "Why Every Small Business Needs Proper Bookkeeping",
-      excerpt: "Bookkeeping is often seen as a tedious task, but for small business owners, it&apos;s one of the most important practices for long-term success. Accurate bookkeeping keeps your financial records organized...",
+      title: "Understanding the NDIS Price Guide: A Bookkeeper's Guide",
+      excerpt: "The NDIS Price Guide can be complex. We break down the key categories and how to ensure your service agreements align with the latest NDIS pricing standards...",
       color: "bg-blue-100 text-blue-600"
     },
     {
       icon: AlertTriangle,
-      title: "Top 5 Bookkeeping Mistakes Small Business Owners Make",
-      excerpt: "Even the most diligent business owners can make mistakes when it comes to bookkeeping. Here are the top five pitfalls that could cost you money and stress...",
+      title: "Common NDIS Audit Pitfalls & How to Avoid Them",
+      excerpt: "Don't let an NDIS Commission audit catch you off guard. Learn the top documentation mistakes providers make and how to keep your books audit-ready...",
       color: "bg-orange-100 text-orange-600"
     },
     {
       icon: BarChart3,
-      title: "How Accurate Financial Reports Help You Make Smarter Business Decisions",
-      excerpt: "Financial reports are more than numbers—they're a roadmap to your business's future. Reports like profit and loss statements provide insights into where your money is coming from...",
+      title: "Mastering Budget Tracking for Self-Managed Participants",
+      excerpt: "Self-managing your NDIS plan gives you choice and control, but it also comes with financial responsibility. Here's a simple roadmap to tracking your funds...",
       color: "bg-green-100 text-green-600"
     },
     {
       icon: FileText,
-      title: "Bookkeeping vs. Accounting: What's the Difference?",
-      excerpt: "Many small business owners confuse bookkeeping with accounting, but they serve different purposes. Bookkeeping involves recording daily transactions, managing accounts payable...",
+      title: "Service Agreements: What NDIS Providers Need to Know",
+      excerpt: "A well-structured service agreement is the foundation of a good provider-participant relationship. Learn the essential financial clauses for compliance...",
       color: "bg-purple-100 text-purple-600"
     },
     {
       icon: Users,
-      title: "The Benefits of Outsourcing Your Bookkeeping",
-      excerpt: "Outsourcing bookkeeping is a smart choice for small business owners who want to save time, reduce stress, and improve accuracy. Key benefits include time savings, cost efficiency...",
+      title: "The Role of a Bookkeeper in NDIS Plan Management",
+      excerpt: "Discover how a specialized NDIS bookkeeper can help you maximize your plan's value while ensuring every cent is spent according to your goals...",
       color: "bg-teal-100 text-teal-600"
     }
   ]
@@ -43,10 +43,10 @@ export function BlogSection() {
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center space-y-4 lg:space-y-6 mb-16 lg:mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground text-balance max-w-4xl mx-auto">
-            Resources & Insights
+            NDIS Resources & Insights
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Learn from our expertise. Discover tips, insights, and best practices to help you manage your business finances better.
+            Stay informed with the latest NDIS financial updates. Discover tips and best practices for managing your plan or provider agency.
           </p>
         </div>
 
@@ -78,9 +78,9 @@ export function BlogSection() {
           <Button 
             size="lg" 
             className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-4"
-            onClick={() => window.open('https://calendly.com/bookkeeperstouch/bookkeeping-consultation', '_blank')}
+            onClick={() => window.open('https://calendly.com/ndisbookkeeping/consultation', '_blank')}
           >
-            Get Expert Bookkeeping Advice
+            Get Expert NDIS Advice
           </Button>
         </div>
       </div>

@@ -2,70 +2,114 @@
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Calculator, TrendingUp, Users } from "lucide-react"
+import { MessageSquare, ArrowRight, CheckCircle2, Award } from "lucide-react"
 
 export function HeroSection() {
+  const scrollToContact = () => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
-    <section className="bg-gradient-to-br from-blue-50 to-green-50 py-16 lg:py-24 xl:py-32">
+    <section id="hero" className="bg-gradient-to-br from-slate-50 via-white to-green-50/30 py-16 lg:py-24 xl:py-32 overflow-hidden">
       <div className="container mx-auto px-4 max-w-7xl">
-        <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-center">
-          <div className="space-y-8 lg:space-y-10">
+        <div className="grid lg:grid-cols-12 gap-12 xl:gap-20 items-center">
+          {/* Left Column: Headline and Copy */}
+          <div className="space-y-8 lg:space-y-10 lg:col-span-7">
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight text-balance">
-                Bookkeeper&apos;s Touch{" "}
-                <span className="inline-flex items-center space-x-2">
-                  <span className="w-8 h-8 lg:w-10 lg:h-10 bg-blue-200 rounded-full flex items-center justify-center">
-                    <Calculator className="w-4 h-4 lg:w-5 lg:h-5 text-blue-600" />
-                  </span>
-                  <span className="w-8 h-8 lg:w-10 lg:h-10 bg-green-200 rounded-full flex items-center justify-center">
-                    <TrendingUp className="w-4 h-4 lg:w-5 lg:h-5 text-green-600" />
-                  </span>
-                  <span className="w-8 h-8 lg:w-10 lg:h-10 bg-blue-300 rounded-full flex items-center justify-center">
-                    <Users className="w-4 h-4 lg:w-5 lg:h-5 text-blue-700" />
-                  </span>
-                </span>{" "}
-                Your Trusted Partner in Financial Clarity
+              <div className="inline-flex items-center space-x-2 bg-accent/10 border border-accent/20 px-3 py-1.5 rounded-full text-accent font-semibold text-sm">
+                <Award className="w-4 h-4" />
+                <span>QuickBooks Certified ProAdvisor Support</span>
+              </div>
+              
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-primary leading-tight tracking-tight text-balance">
+                Reliable QuickBooks Bookkeeping & Cleanup Support for US CPA Firms & Small Businesses
               </h1>
-              <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-2xl text-pretty leading-relaxed">
-                We help small businesses stay on top of their finances with accurate bookkeeping, clear reporting, and reliable support. With us, you can focus on growing your business while we handle the numbers.
+              
+              <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl text-pretty leading-relaxed">
+                Stop drowning in messy books and backlogs. We deliver crystal-clear, tax-ready financial statements so you can focus on scaling your firm and tax strategy with absolute confidence.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 lg:gap-6">
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
-                className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-4"
-                onClick={() => window.open('https://calendly.com/bookkeeperstouch/bookkeeping-consultation', '_blank')}
+                className="bg-accent text-accent-foreground hover:bg-accent/90 text-base font-semibold px-8 py-6 shadow-md shadow-accent/20 transition-all hover:translate-y-[-1px] active:translate-y-[0px] cursor-pointer"
+                onClick={scrollToContact}
               >
-                Book a Free Consultation
+                <span>Get a Free Cleanup Quote</span>
+                <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
+              
+              <Button 
+                size="lg"
+                variant="outline"
+                className="border-slate-300 text-slate-700 hover:bg-slate-50 hover:text-primary text-base font-semibold px-8 py-6 flex items-center justify-center space-x-2 shadow-sm transition-all hover:translate-y-[-1px] active:translate-y-[0px] cursor-pointer"
+                onClick={() => window.open('https://wa.me/8801747891235?text=Hi!%20I%20am%20interested%20in%20your%20QuickBooks%20cleanup%20and%20bookkeeping%20services.', '_blank')}
+              >
+                <MessageSquare className="w-5 h-5 text-[#25D366] fill-[#25D366]" />
+                <span>Chat on WhatsApp</span>
+              </Button>
+            </div>
+
+            {/* Quick Benefits list */}
+            <div className="grid sm:grid-cols-3 gap-4 pt-4 border-t border-slate-100">
+              <div className="flex items-center space-x-2">
+                <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0" />
+                <span className="text-sm font-medium text-slate-600">Tax-Ready Reports</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0" />
+                <span className="text-sm font-medium text-slate-600">100% Secure & White-Label</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0" />
+                <span className="text-sm font-medium text-slate-600">Expert QBO Cleanup</span>
+              </div>
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative">
-              <img
-                src="/modern-laptop-showing-accounting-software-dashboar.jpg"
-                alt="Modern laptop showing accounting software dashboard"
-                className="w-full h-auto rounded-2xl shadow-2xl"
-              />
+          {/* Right Column: Visual Layout with Overlays */}
+          <div className="relative lg:col-span-5 flex justify-center">
+            <div className="relative w-full max-w-[480px] lg:max-w-none aspect-square lg:aspect-[4/5] xl:aspect-[1/1]">
+              {/* Background laptop workspace */}
+              <div className="absolute inset-4 rounded-3xl overflow-hidden shadow-2xl border border-slate-200/50 bg-slate-100">
+                <img
+                  src="/modern-laptop-showing-accounting-software-dashboar.jpg"
+                  alt="Modern laptop showing QuickBooks bookkeeping software dashboard"
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
-              <Card className="absolute top-4 right-4 lg:top-6 lg:right-6 p-3 lg:p-4 bg-white/90 backdrop-blur-sm shadow-lg">
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="text-sm lg:text-base font-medium">Books Updated</span>
+              {/* Owner Professional Photo Card Overlay */}
+              <Card className="absolute -bottom-2 -left-2 sm:bottom-6 sm:-left-6 p-4 bg-white/95 backdrop-blur-md shadow-xl border-slate-100 flex items-center space-x-4 max-w-[280px]">
+                <div className="w-16 h-16 rounded-2xl overflow-hidden border border-accent/20 flex-shrink-0">
+                  <img 
+                    src="/image.jpeg" 
+                    alt="Rakib Uddin - QuickBooks Certified ProAdvisor"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <div className="font-bold text-slate-900 text-sm">Rakib Uddin</div>
+                  <div className="text-xs text-muted-foreground font-medium">QuickBooks Certified</div>
+                  <div className="text-xs font-semibold text-accent mt-0.5">Founder & ProAdvisor</div>
                 </div>
               </Card>
 
-              <Card className="absolute bottom-8 left-4 lg:bottom-12 lg:left-6 p-4 lg:p-6 bg-white/90 backdrop-blur-sm shadow-lg">
-                <div className="space-y-2">
-                  <div className="text-sm lg:text-base text-muted-foreground">Monthly Revenue</div>
-                  <div className="text-2xl lg:text-3xl font-bold text-primary">$15,420</div>
-                  <div className="flex items-center space-x-1 text-green-600">
-                    <TrendingUp className="w-4 h-4 lg:w-5 lg:h-5" />
-                    <span className="text-sm lg:text-base">+18%</span>
-                  </div>
-                </div>
+              {/* Badges/Tags Overlay */}
+              <Card className="absolute -top-2 -right-2 sm:top-8 sm:-right-4 p-3 bg-white/95 backdrop-blur-sm shadow-lg border-slate-100 flex items-center space-x-2.5">
+                <div className="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
+                <span className="text-xs font-semibold text-slate-800">CPA Backlog-Ready</span>
+              </Card>
+
+              <Card className="absolute top-1/2 -right-4 sm:-right-8 transform -translate-y-1/2 p-3 bg-white/95 backdrop-blur-sm shadow-lg border-slate-100 flex flex-col items-center justify-center space-y-1 max-w-[120px]">
+                <img 
+                  src="/certificate.jpeg" 
+                  alt="QuickBooks Certified ProAdvisor Logo" 
+                  className="h-10 w-auto object-contain"
+                />
+                <span className="text-[10px] font-bold text-slate-700 text-center">Certified ProAdvisor</span>
               </Card>
             </div>
           </div>

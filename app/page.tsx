@@ -1,27 +1,21 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
-import { TrustSection } from "@/components/trust-section"
+import { PainPointSection } from "@/components/pain-point-section"
 import { ServicesSection } from "@/components/services-section"
-import { AboutSection } from "@/components/founders-section"
-import { TeamSection } from "@/components/team-section"
-import { PricingSection } from "@/components/pricing-section"
-import { TestimonialsSection } from "@/components/testimonials-section"
-import { BlogSection } from "@/components/blog-section"
+import { PartnershipSection } from "@/components/partnership-section"
+import { SocialProofSection } from "@/components/social-proof-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-white">
       <Header />
       <HeroSection />
-      <TrustSection />
+      <PainPointSection />
       <ServicesSection />
-      <AboutSection />
-      <TeamSection />
-      <PricingSection />
-      <TestimonialsSection />
-      <BlogSection />
+      <PartnershipSection />
+      <SocialProofSection />
       <ContactSection />
       <Footer />
     </main>

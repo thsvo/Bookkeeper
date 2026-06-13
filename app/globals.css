@@ -4,40 +4,40 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Blue + Green color scheme for Bookkeeper&apos;s Touch */
-  --background: oklch(1 0 0); /* Pure white */
-  --foreground: oklch(0.15 0.02 250); /* Dark navy for text */
-  --card: oklch(0.98 0 0); /* Light gray for cards */
-  --card-foreground: oklch(0.3 0 0); /* Dark gray for card text */
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0.02 250);
-  --primary: oklch(0.45 0.15 220); /* Professional blue for primary buttons */
-  --primary-foreground: oklch(1 0 0); /* White text on primary */
-  --secondary: oklch(0.65 0.12 220); /* Lighter blue for secondary */
-  --secondary-foreground: oklch(1 0 0);
-  --muted: oklch(0.96 0 0); /* Very light gray */
-  --muted-foreground: oklch(0.5 0 0); /* Medium gray */
-  --accent: oklch(0.7 0.12 160); /* Green accent */
-  --accent-foreground: oklch(0.15 0.02 250);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.9 0 0); /* Light border */
-  --input: oklch(1 0 0);
-  --ring: oklch(0.45 0.15 220); /* Blue focus ring */
-  --chart-1: oklch(0.45 0.15 220); /* Blue */
-  --chart-2: oklch(0.7 0.12 160); /* Green */
-  --chart-3: oklch(0.65 0.12 220); /* Lighter blue */
-  --chart-4: oklch(0.6 0.15 160); /* Darker green */
-  --chart-5: oklch(0.55 0.2 200); /* Teal */
-  --radius: 0.5rem;
-  --sidebar: oklch(0.98 0 0);
-  --sidebar-foreground: oklch(0.3 0 0);
-  --sidebar-primary: oklch(0.45 0.15 220);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.65 0.12 220);
-  --sidebar-accent-foreground: oklch(1 0 0);
-  --sidebar-border: oklch(0.9 0 0);
-  --sidebar-ring: oklch(0.45 0.15 220);
+  /* Navy Blue + QuickBooks Green color scheme for Bookkeepers Touch */
+  --background: #ffffff; /* Pure white */
+  --foreground: #091a36; /* Deep navy blue for headings & main text */
+  --card: #f8fafc; /* Light gray/slate for cards */
+  --card-foreground: #1e293b;
+  --popover: #ffffff;
+  --popover-foreground: #091a36;
+  --primary: #0a2540; /* Deep navy blue for primary trust color */
+  --primary-foreground: #ffffff;
+  --secondary: #e2e8f0; /* Soft gray for secondary buttons */
+  --secondary-foreground: #0a2540;
+  --muted: #f1f5f9; /* Soft background tint */
+  --muted-foreground: #64748b;
+  --accent: #2ca01c; /* QuickBooks Green for buttons, badges, highlights */
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0;
+  --input: #ffffff;
+  --ring: #2ca01c; /* QuickBooks green ring */
+  --chart-1: #0a2540;
+  --chart-2: #2ca01c;
+  --chart-3: #1e3a8a;
+  --chart-4: #22c55e;
+  --chart-5: #0ea5e9;
+  --radius: 0.75rem;
+  --sidebar: #0a2540;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #2ca01c;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #1e293b;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #1e293b;
+  --sidebar-ring: #2ca01c;
 }
 
 .dark {
@@ -123,4 +123,19 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@utility animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
 }

@@ -4,148 +4,95 @@ import { Button } from "@/components/ui/button"
 import { Linkedin } from "lucide-react"
 
 export function Footer() {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
-    <footer className="bg-gray-900 text-white py-16">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-5 gap-8">
+    <footer className="bg-slate-950 text-white py-16">
+      <div className="container mx-auto px-4 max-w-7xl">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 border-b border-slate-800 pb-12">
           {/* Company info */}
-          <div className="lg:col-span-1 space-y-4">
+          <div className="lg:col-span-5 space-y-6">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                <span className="text-gray-900 font-bold text-sm">B</span>
+              <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center">
+                <span className="text-white font-extrabold text-lg">B</span>
               </div>
-              <span className="font-bold text-xl">Bookkeeper&apos;s Touch</span>
+              <span className="font-bold text-2xl tracking-tight">Bookkeepers Touch</span>
             </div>
-            <p className="text-gray-400 text-sm">Your trusted partner in financial clarity for small businesses.</p>
+            <p className="text-slate-400 text-sm sm:text-base leading-relaxed max-w-md">
+              Providing reliable QuickBooks Online catch-up cleanups, monthly reconciliations, and tax-ready financial statement support for US CPAs, tax firms, and small businesses.
+            </p>
           </div>
 
-          {/* Services */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-white">Services</h3>
-            <ul className="space-y-2 text-sm text-gray-400">
+          {/* Services Links */}
+          <div className="lg:col-span-3 space-y-4">
+            <h3 className="font-bold text-white text-base">Solutions</h3>
+            <ul className="space-y-3 text-sm text-slate-400">
               <li>
-                <a href="#services" className="hover:text-white transition-colors">
-                  Monthly Bookkeeping
-                </a>
+                <button onClick={() => scrollToSection("services")} className="hover:text-accent transition-colors text-left cursor-pointer">
+                  QBO Cleanup & Catch-Up
+                </button>
               </li>
               <li>
-                <a href="#services" className="hover:text-white transition-colors">
-                  Payroll Processing
-                </a>
+                <button onClick={() => scrollToSection("services")} className="hover:text-accent transition-colors text-left cursor-pointer">
+                  Monthly Reconciliations
+                </button>
               </li>
               <li>
-                <a href="#services" className="hover:text-white transition-colors">
-                  Financial Reporting
-                </a>
+                <button onClick={() => scrollToSection("services")} className="hover:text-accent transition-colors text-left cursor-pointer">
+                  Tax-Ready P&L & Balance Sheets
+                </button>
               </li>
               <li>
-                <a href="#services" className="hover:text-white transition-colors">
-                  Bank Reconciliation
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="hover:text-white transition-colors">
-                  Cash Flow Management
-                </a>
+                <button onClick={() => scrollToSection("services")} className="hover:text-accent transition-colors text-left cursor-pointer">
+                  Accounts Payable & Receivable
+                </button>
               </li>
             </ul>
           </div>
 
-          {/* Resources */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-white">Resources</h3>
-            <ul className="space-y-2 text-sm text-gray-400">
+          {/* Contact details */}
+          <div className="lg:col-span-4 space-y-4">
+            <h3 className="font-bold text-white text-base">Get in Touch</h3>
+            <ul className="space-y-3 text-sm text-slate-400">
               <li>
-                <a href="#blog" className="hover:text-white transition-colors">
-                  Blog & Insights
+                <span>Email: </span>
+                <a href="mailto:info@bookkeeperstouch.com" className="hover:text-accent transition-colors">
+                  info@bookkeeperstouch.com
                 </a>
               </li>
               <li>
-                <a href="#pricing" className="hover:text-white transition-colors">
-                  Pricing Plans
+                <span>Phone / WhatsApp: </span>
+                <a href="https://wa.me/8801747891235" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                  +880 1747-891235
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-white transition-colors">
-                  Free Consultation
-                </a>
-              </li>
-              <li>
-                <a href="https://calendly.com/bookkeeperstouch/bookkeeping-consultation" className="hover:text-white transition-colors">
-                  Book a Call
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-white">Company</h3>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li>
-                <a href="#about" className="hover:text-white transition-colors">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="hover:text-white transition-colors">
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a href="mailto:bookkeeperstouch@gmail.com" className="hover:text-white transition-colors">
-                  Email Us
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Legal */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-white">Legal</h3>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Privacy policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Terms of service
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Cookie policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Security
+                <span>Website: </span>
+                <a href="https://bookkeeperstouch.com" className="hover:text-accent transition-colors">
+                  bookkeeperstouch.com
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <div className="text-sm text-gray-400">© 2024 Bookkeeper&apos;s Touch. All rights reserved.</div>
+        <div className="mt-12 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="text-sm text-slate-400">
+            Copyright © 2026 Bookkeepers Touch. All Rights Reserved.
+          </div>
           <div className="flex items-center space-x-4">
-            <a 
-              href="https://www.linkedin.com/in/bookkeeperstouch?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
             <Button 
               variant="outline" 
               size="sm" 
-              className="text-white border-gray-600 hover:bg-gray-800 bg-transparent"
-              onClick={() => window.open('https://calendly.com/bookkeeperstouch/bookkeeping-consultation', '_blank')}
+              className="text-white border-slate-700 hover:bg-slate-800 bg-transparent cursor-pointer"
+              onClick={() => scrollToSection("contact")}
             >
-              Book Free Consultation
+              Get a Free Cleanup Quote
             </Button>
           </div>
         </div>

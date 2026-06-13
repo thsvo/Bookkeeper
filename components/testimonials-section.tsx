@@ -10,7 +10,7 @@ export function TestimonialsSection() {
             What Our Clients Say
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what business owners say about working with Bookkeeper&apos;s Touch.
+            Supporting NDIS participants and providers across Australia. Here is what our community says about NDIS Bookkeeping Australia.
           </p>
         </div>
 
@@ -20,9 +20,9 @@ export function TestimonialsSection() {
             <CardContent className="p-8 lg:p-12 xl:p-16 space-y-6 lg:space-y-8">
               <div className="text-6xl lg:text-7xl xl:text-8xl font-bold">5.0</div>
               <div className="space-y-4 lg:space-y-6">
-                <p className="text-xl lg:text-2xl xl:text-3xl font-medium">"Rakib saved my business from financial chaos"</p>
+                <p className="text-xl lg:text-2xl xl:text-3xl font-medium">"Finally, I understand my NDIS funding"</p>
                 <p className="text-blue-100 text-base lg:text-lg xl:text-xl leading-relaxed">
-                  I was drowning in receipts and spreadsheets when I found Bookkeeper&apos;s Touch. Rakib took over my bookkeeping completely and now I have peace of mind knowing my finances are in expert hands. I can finally focus on growing my business instead of worrying about the numbers.
+                  Navigating NDIS portal and budget tracking used to keep me up at night. Since joining NDIS Bookkeeping Australia, I have a clear view of my spending. They caught an overspend before it happened, saving my plan review. I can finally focus on my goals instead of the paperwork.
                 </p>
               </div>
               <div className="flex items-center space-x-4 lg:space-x-6">
@@ -33,7 +33,7 @@ export function TestimonialsSection() {
                 />
                 <div>
                   <div className="font-medium text-base lg:text-lg">Sarah Johnson</div>
-                  <div className="text-blue-200 text-sm lg:text-base">Founder, Creative Studio</div>
+                  <div className="text-blue-200 text-sm lg:text-base">NDIS Participant, Self-Managed</div>
                 </div>
               </div>
             </CardContent>
@@ -49,7 +49,7 @@ export function TestimonialsSection() {
                   ))}
                 </div>
                 <p className="text-sm lg:text-base leading-relaxed">
-                  "Rakib's attention to detail is incredible. He caught errors that could have cost me thousands during tax season. Worth every penny!"
+                  "Our NDIS provider audit was 100% stress-free thanks to Rakib and his team. Their record-keeping is impeccable and fully compliant with the Commission's standards."
                 </p>
                 <div className="flex items-center space-x-3">
                   <img
@@ -59,7 +59,7 @@ export function TestimonialsSection() {
                   />
                   <div>
                     <div className="font-medium text-sm lg:text-base">Michael Chen</div>
-                    <div className="text-green-200 text-xs lg:text-sm">Owner, Local Restaurant</div>
+                    <div className="text-green-200 text-xs lg:text-sm">Director, Care Plus NDIS Services</div>
                   </div>
                 </div>
               </CardContent>
@@ -73,7 +73,7 @@ export function TestimonialsSection() {
                   ))}
                 </div>
                 <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">
-                  "Professional, responsive, and incredibly knowledgeable. Bookkeeper&apos;s Touch transformed how I manage my business finances."
+                  "Professional, responsive, and incredibly knowledgeable about the NDIS Price Guide. They transformed how we handle our service agreements and payroll."
                 </p>
                 <div className="flex items-center space-x-3">
                   <img
@@ -83,7 +83,7 @@ export function TestimonialsSection() {
                   />
                   <div>
                     <div className="font-medium text-sm lg:text-base">Emma Rodriguez</div>
-                    <div className="text-muted-foreground text-xs lg:text-sm">CEO, Digital Marketing Agency</div>
+                    <div className="text-muted-foreground text-xs lg:text-sm">NDIS Plan Management Agency</div>
                   </div>
                 </div>
               </CardContent>
